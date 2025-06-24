@@ -1,22 +1,6 @@
-/**
- * 处理 58同城 的请求和响应
- */
+// 如果使用 Surge
+let body = "111";
+$done({body});
 
-// 处理 /api/getTopContent 请求
-if (typeof $request !== 'undefined' && $request.url.includes('/api/getTopContent')) {
-    // 原请求处理逻辑
-    $done({});
-}
-
-// 处理 /1bud09FiID.txt 响应
-if (typeof $response !== 'undefined' && $request.url.includes('1bud09FiID.txt')) {
-    $done({
-        body: "111",
-        headers: {
-            "Content-Type": "text/plain"
-        }
-    });
-}
-
-// 默认情况
-$done({});
+// 如果使用 Quantumult X
+$done({response: {body: "111"}});
