@@ -1,6 +1,3 @@
 // 如果使用 Surge
 let body = "111";
 $done({body});
-
-// 如果使用 Quantumult X
-$done({response: {body: "111"}});
