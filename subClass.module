@@ -2,10 +2,10 @@
 let requestUrl = $request.url;
 
 // 原始响应体
-let originalBody = "1211";
+let originalBody = "12121";
 
 // 追加请求的 URL 到响应体
 let modifiedBody = originalBody + `\nRequest URL: ${requestUrl}`;
 
 // 返回修改后的响应
-$done({ body: modifiedBody });
+$done({  modifiedBody });
