@@ -1,3 +1,8 @@
-// 如果使用 Surge
+// 打印请求的 URL
+console.log(`Request URL: ${$request.url}`);
+
+// 修改响应体
 let body = "111";
+
+// 返回修改后的响应
 $done({body});
